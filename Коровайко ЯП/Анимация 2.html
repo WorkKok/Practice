@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Коровайко</title>
+<style>
+#round{
+border-radius:50%;
+width:50px;
+height:50px;
+background:blue;
+animation: moving1 5s infinite linear;
+top:50%;
+left:46%;
+position:relative;
+transform-origin: 150px;
+}
+#round1{
+border-radius:50%;
+width:50px;
+height:50px;
+background:blue;
+animation: moving2 5s infinite linear;
+top:44%;
+left:51%;
+position:relative;
+transform-origin: 80px;
+}
+#round2{
+border-radius:50%;
+width:50px;
+height:50px;
+background:blue;
+animation: moving3 5s infinite linear;
+top:38.5%;
+left:40%;
+position:relative;
+transform-origin: 230px;
+}
+@keyframes moving1 {
+0% {backgroung: blue;
+opacity: 1;}
+50% {background: yellow;
+opacity: 0.5;}
+100% {transform: rotate(360deg);
+background:blue;
+opacity:1;}
+}
+@keyframes moving2 {
+0% {backgroung: blue;
+opacity: 1;}
+50% {background: red;
+opacity: 0.5;}
+100% {transform: rotate(360deg);
+background:blue;
+opacity:1;}
+}
+@keyframes moving3 {
+0% {backgroung: blue;
+opacity: 1;}
+50% {background: green;
+opacity: 0.5;}
+100% {transform: rotate(360deg);
+background:blue;
+opacity:1;}
+}
+</style>
+<body>
+<p><a href = "Страница навигации.html">Назад</a></p>
+<div id = "round"></div>
+<div id = "round1"></div>
+<div id = "round2"></div>
+</body>

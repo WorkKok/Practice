@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<script>
+    function color() {
+        document.getElementById("1").style.color = "blue";
+        document.getElementById("2").style.color = "red";
+        document.getElementById("3").style.color = "green";
+    }
+    function font() {
+        document.getElementById("1").style.fontSize = "30px";
+        document.getElementById("2").style.fontSize = "30px";
+        document.getElementById("3").style.fontSize = "30px";
+    }
+    function s() {
+        document.getElementById("4").style.width = "400px";
+        document.getElementById("4").style.height = "400px";
+    }
+</script>
+<body>
+    <p id = "1">Иммануил Кант родился в Кенигсберге (ныне Калининград) в 
+        Восточной Пруссии в 1724 г. Отец был шорником, а мать — до­ 
+        мохозяйкой, шестеро их детей не дожили до зрелого возраста. Кант 
+        всегда вспоминал родителей с теплотой и благодарностью, видел в 
+        них образец безупречной честности. </p>
+    <p id = "2">Начнем с общего плана философии Канта. Научное познание 
+        интересуют суждения всеобщие и необходимые, дающие прирост 
+        знания. Каковы типы суждений, значимых для науки? Так возни­ 
+        кает теория суждений. Суждение состоит из субъекта (А) и преди­ 
+        ката (В).</p>
+    <p id = "3">Аналитическое суждение формулируется априорно, нет необ­ 
+        ходимости прибегать к опыту. Оно универсально и необходимо, но 
+        не прибавляет нового знания. Именно поэтому наука широко ис­ 
+        пользует эти суждения для объяснения, но никогда не для обосно­ 
+        вания своих положений. Априорное аналитическое суждение не 
+        типично для науки. </p>
+        <img id = "4" src = "Танец.gif"> 
+            <input type = "button" onclick = "color()" value = "Цвет"/>
+            <input type = "button" onclick= "font()" value = "Шрифт"/>
+            <input type = "button" onclick = "s()" value = "Размер"/>
+</body>
+</html>

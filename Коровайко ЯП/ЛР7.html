@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<script>
+    function del(){
+        document.getElementById('form').reset();
+    }
+    function create() {
+        alert("Javascript не создаёт файлы")
+       
+    }
+</script>
+<body>
+    <form id = "form">
+        <fieldset>
+            <legend>Печатный центр "Что написано пером"</legend>
+            Имя:<br/><input type = "text" name = "firtsname"/><br/>
+            Фамилия:<br/><input type ="text" name = "lastname"/><br/>
+            Адрес:<br/><input type = "text" name = "adress"/><br/>
+            Телефон:<br/><input type = "tel"name = "telephone"/><br/>
+            Желаемая дата выполнения:<br/><input type = "date" name = "date"/><br/>
+            <legend>Категория заказа</legend>
+            <br/><input type = "checkbox" name = "1">Визитка<br/>
+            <br/><input type = "checkbox" name = "2">Флаер<br/>
+            <br/><input type = "checkbox" name = "3">Бланк<br/>
+            <br/><input type = "checkbox" name = "4">Брошюра<br/>
+            <br/><input type="button" onclick = "create()" value = "Отправить"><br/>
+            <br/><input type = "button" onclick="del()" value = "Сбросить"><br/>
+        </fieldset>
+    </form>
+</body>

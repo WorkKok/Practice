@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .form {
+        height: auto;
+        width: 400px;
+        border: 3px solid black;
+        background: bisque;
+        display: table;
+        margin: 10px;
+    }
+    lebel{
+        display: table-row;
+        margin-left: 10px;
+    }
+    .legend{
+        margin-bottom: 10px;
+        background: bisque;
+    }
+    br{
+        display: table-row;
+    }
+    input {
+        margin-bottom: 10px;
+        text-align: right;
+        display: table-row;
+    }
+</style>
+<body>
+<form class="form" action = phpN3.php method="post">
+    <p>
+    <legend class="legend">Работяги</legend>
+    <lebel>Номер подразделения</lebel>
+    <input type = "number" name = "id"><br>
+    <lebel>Табельный номер</lebel>
+    <input type = "number" name = "uid"><br>
+    <lebel>Имя</lebel>
+    <input type = "text" name = "first"><br>
+    <lebel>Фамилия</lebel>
+    <input type = "text" name = "last"><br>
+    <lebel>Отчество</lebel>
+    <input type = "text" name = "otch"><br>
+    <lebel>Статус</lebel>
+    <input type="text" name = "stat"><br>
+    <lebel>Разряд</lebel>
+    <input type = "number" name = "raz"><br>
+    <lebel>Рублей/час</lebel>
+    <input type = "number" name = "chas"><br>
+    <lebel>Оплата за наряд</lebel>
+    <input type = "number" name = "nar"><br>
+    <lebel>Отпускные</lebel>
+    <input type = "number" name = "otp"><br>
+    <lebel>Больничные</lebel>
+    <input type = "number" name = "bol"><br>
+    <input type = "submit" value = "Отправить">
+    </p>
+</form>
+<form class="form" action="Даю%20задания.php" method="post">
+    <p>
+        <legend class="legend">Задания</legend>
+        <lebel>Табельный номер</lebel>
+        <input type = "number" name = "id"><br>
+        <lebel>Содержание работы</lebel>
+        <textarea row = "40" cols="40" name = "rab"></textarea><br>
+        <lebel>Начало работы</lebel>
+        <input type = "date" name = "date_1"><br>
+        <lebel>Сдача работы</lebel>
+        <input type = "date" name = "date_2"><br>
+        <input type= "submit" value="Назначить наряд">
+    </p>
+</form>
+    <form class="form" action="Часы.php" method="post">
+        <p>
+            <legend class="legend">Часы посещения</legend>
+            <lebel>Табельный номер</lebel>
+            <input type = "number" name = "id"><br>
+            <lebel>Часов посещения</lebel>
+            <input type="number" name="chas"><br>
+            <input type= "submit" value="Отправить">
+        </p>
+</form>
+</body>
+</html>

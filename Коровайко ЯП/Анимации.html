@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Коровайко</title>
+<style>
+#container {
+  animation-duration: 6s;
+  animation-name: animation1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+background: blue;
+color: white;
+width: 200px;
+height: 100px;
+margin-top: 10px;
+text-align: center;
+position: absolute;
+float:left;
+}
+p.text::before{content:"Я блок";
+animation-duration: 6s;
+  animation-name: animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 20px;
+}
+@keyframes animation1{ 
+0% {width: 200px;}
+15% {width: 50px;}
+30% {width: 200px;}
+45% {transform: rotate(0deg);}
+50% {transform: rotate(360deg);}
+55% {transform:rotate(0deg);}
+100% {width: 300px;}
+}
+@keyframes animation{
+0%{content: "Я блок";}
+50% {content: "Я блок";}
+95% {content: "Я большой блок";}
+100% {content:"Я большой блок"}
+}
+#content{
+border: solid 1px;
+color:black;
+width: 200px;
+height: 100px;
+text-align: center;
+float: bottom;
+clear:both;
+}
+</style>
+<body>
+<p><a href = "Страница навигации.html">Назад</a></p>
+<div id = "container"><p class = "text"></p><div>
+</body>

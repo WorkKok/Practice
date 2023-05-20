@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p>Начало документа...</p>
+<p id = "demo"></p>
+<script>
+    var x = +prompt('Введите x');
+    var y = +prompt('Введите y');
+    if (x <= 1 & y > 0){
+    var z = (x/y) * Math.sqrt(x* y);
+     document.getElementById("demo").innerHTML ="Результат = " + z ;}
+     else { document.getElementById("demo").innerHTML ="Нет результата" ;}
+</script>
+<p>Конец документа</p>
+</body>
